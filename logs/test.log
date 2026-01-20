@@ -1,0 +1,266 @@
+2026-01-20 19:34:36,863 - INFO - root - ===== Test setup started =====
+2026-01-20 19:34:41,374 - INFO - root - Start test: Open homepage
+2026-01-20 19:34:42,291 - INFO - root - Homepage opened successfully
+2026-01-20 19:34:42,293 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:34:42,368 - INFO - root - ===== Test finished =====
+2026-01-20 19:34:42,369 - INFO - root - ===== Test setup started =====
+2026-01-20 19:34:44,389 - INFO - root - Start test: Search flights
+2026-01-20 19:34:44,391 - INFO - root - Selecting departure and destination
+2026-01-20 19:34:44,521 - INFO - root - Flights search submitted
+2026-01-20 19:34:44,523 - ERROR - root - Error in test_search_flights
+Traceback (most recent call last):
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/tests/test_blazedemo.py", line 31, in test_search_flights
+    assert "Flights from Paris to London" in driver.page_source
+AssertionError: assert 'Flights from Paris to London' in '<html lang="en"><head>\n    <meta charset="utf-8">\n    <title> BlazeDemo</title>\n    <meta name="description" conte...,\n      recordScrollState: true,\n    };\n    client.initAutoTracking(options);\n  });\n</script>\n\n\n</body></html>'
+ +  where '<html lang="en"><head>\n    <meta charset="utf-8">\n    <title> BlazeDemo</title>\n    <meta name="description" conte...,\n      recordScrollState: true,\n    };\n    client.initAutoTracking(options);\n  });\n</script>\n\n\n</body></html>' = <selenium.webdriver.chrome.webdriver.WebDriver (session="dbde1f4198cb80acaf67bef9656c5b90")>.page_source
+2026-01-20 19:34:44,950 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:34:45,027 - INFO - root - ===== Test finished =====
+2026-01-20 19:34:45,028 - INFO - root - ===== Test setup started =====
+2026-01-20 19:34:46,446 - INFO - root - Start test: Complete booking
+2026-01-20 19:34:46,447 - INFO - root - Searching flights
+2026-01-20 19:34:47,245 - INFO - root - Selecting first available flight
+2026-01-20 19:34:47,746 - ERROR - root - Error in test_complete_booking
+Traceback (most recent call last):
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/tests/test_blazedemo.py", line 50, in test_complete_booking
+    driver.find_element(By.CSS_SELECTOR, "input[type='submit']").click()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py", line 114, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=143.0.7499.193); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+0   chromedriver                        0x0000000102903dfc cxxbridge1$str$ptr + 3031016
+1   chromedriver                        0x00000001028fbcb8 cxxbridge1$str$ptr + 2997924
+2   chromedriver                        0x00000001023f6b90 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74192
+3   chromedriver                        0x0000000102407534 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 142196
+4   chromedriver                        0x00000001024065c0 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 138240
+5   chromedriver                        0x00000001023fd1c8 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 100360
+6   chromedriver                        0x00000001023fb9fc _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 94268
+7   chromedriver                        0x00000001023feb34 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 106868
+8   chromedriver                        0x00000001023febec _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 107052
+9   chromedriver                        0x000000010243f6a0 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 371936
+10  chromedriver                        0x000000010243ebcc _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 369164
+11  chromedriver                        0x0000000102433d64 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 324516
+12  chromedriver                        0x0000000102433808 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 323144
+13  chromedriver                        0x000000010247ea28 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630888
+14  chromedriver                        0x000000010243222c _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 317548
+15  chromedriver                        0x00000001028c8194 cxxbridge1$str$ptr + 2786176
+16  chromedriver                        0x00000001028cb900 cxxbridge1$str$ptr + 2800364
+17  chromedriver                        0x00000001028a842c cxxbridge1$str$ptr + 2655768
+18  chromedriver                        0x00000001028cc170 cxxbridge1$str$ptr + 2802524
+19  chromedriver                        0x0000000102898e10 cxxbridge1$str$ptr + 2592764
+20  chromedriver                        0x00000001028eb14c cxxbridge1$str$ptr + 2929464
+21  chromedriver                        0x00000001028eb2cc cxxbridge1$str$ptr + 2929848
+22  chromedriver                        0x00000001028fb910 cxxbridge1$str$ptr + 2996988
+23  libsystem_pthread.dylib             0x000000019f50bfa8 _pthread_start + 148
+24  libsystem_pthread.dylib             0x000000019f506da0 thread_start + 8
+
+2026-01-20 19:34:47,856 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:34:47,926 - INFO - root - ===== Test finished =====
+2026-01-20 19:36:16,434 - INFO - root - ===== Test setup started =====
+2026-01-20 19:36:18,277 - INFO - root - Start test: Open homepage
+2026-01-20 19:36:19,155 - INFO - root - Homepage opened successfully
+2026-01-20 19:36:19,161 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:36:19,233 - INFO - root - ===== Test finished =====
+2026-01-20 19:36:19,234 - INFO - root - ===== Test setup started =====
+2026-01-20 19:36:20,593 - INFO - root - Start test: Search flights
+2026-01-20 19:36:21,398 - INFO - root - Flight search submitted
+2026-01-20 19:36:21,918 - INFO - root - Flights table loaded successfully
+2026-01-20 19:36:21,920 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:36:21,992 - INFO - root - ===== Test finished =====
+2026-01-20 19:36:21,993 - INFO - root - ===== Test setup started =====
+2026-01-20 19:36:24,214 - INFO - root - Start test: Complete booking
+2026-01-20 19:36:24,341 - INFO - root - Flights search submitted
+2026-01-20 19:36:24,744 - ERROR - root - Error in test_complete_booking
+Traceback (most recent call last):
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/tests/test_blazedemo.py", line 50, in test_complete_booking
+    WebDriverWait(driver, 10).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        EC.element_to_be_clickable((By.CSS_SELECTOR, "input[type='submit']"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ).click()
+    ^
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 112, in until
+    value = method(self._driver)
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/venv/lib/python3.14/site-packages/selenium/webdriver/support/expected_conditions.py", line 516, in _predicate
+    if element and element.is_enabled():
+                   ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py", line 235, in is_enabled
+    return self._execute(Command.IS_ELEMENT_ENABLED)["value"]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=143.0.7499.193); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+0   chromedriver                        0x0000000100747dfc cxxbridge1$str$ptr + 3031016
+1   chromedriver                        0x000000010073fcb8 cxxbridge1$str$ptr + 2997924
+2   chromedriver                        0x000000010023ab90 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 74192
+3   chromedriver                        0x000000010024b534 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 142196
+4   chromedriver                        0x000000010024a5c0 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 138240
+5   chromedriver                        0x00000001002411c8 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 100360
+6   chromedriver                        0x000000010023f9fc _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 94268
+7   chromedriver                        0x0000000100242b34 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 106868
+8   chromedriver                        0x0000000100242bec _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 107052
+9   chromedriver                        0x000000010027d2c4 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 346372
+10  chromedriver                        0x0000000100277808 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 323144
+11  chromedriver                        0x00000001002c2a28 _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 630888
+12  chromedriver                        0x000000010027622c _RNvCsgXDX2mvAJAg_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 317548
+13  chromedriver                        0x000000010070c194 cxxbridge1$str$ptr + 2786176
+14  chromedriver                        0x000000010070f900 cxxbridge1$str$ptr + 2800364
+15  chromedriver                        0x00000001006ec42c cxxbridge1$str$ptr + 2655768
+16  chromedriver                        0x0000000100710170 cxxbridge1$str$ptr + 2802524
+17  chromedriver                        0x00000001006dce10 cxxbridge1$str$ptr + 2592764
+18  chromedriver                        0x000000010072f14c cxxbridge1$str$ptr + 2929464
+19  chromedriver                        0x000000010072f2cc cxxbridge1$str$ptr + 2929848
+20  chromedriver                        0x000000010073f910 cxxbridge1$str$ptr + 2996988
+21  libsystem_pthread.dylib             0x000000019f50bfa8 _pthread_start + 148
+22  libsystem_pthread.dylib             0x000000019f506da0 thread_start + 8
+
+2026-01-20 19:36:24,869 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:36:24,936 - INFO - root - ===== Test finished =====
+2026-01-20 19:38:51,379 - INFO - root - ===== Test setup started =====
+2026-01-20 19:38:53,042 - INFO - root - Start test: Open homepage
+2026-01-20 19:38:53,903 - INFO - root - Homepage opened successfully
+2026-01-20 19:38:53,904 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:38:53,981 - INFO - root - ===== Test finished =====
+2026-01-20 19:38:53,982 - INFO - root - ===== Test setup started =====
+2026-01-20 19:38:56,206 - INFO - root - Start test: Search flights
+2026-01-20 19:38:56,338 - INFO - root - Flight search submitted
+2026-01-20 19:38:56,859 - INFO - root - Flights table loaded successfully
+2026-01-20 19:38:56,861 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:38:56,947 - INFO - root - ===== Test finished =====
+2026-01-20 19:38:56,948 - INFO - root - ===== Test setup started =====
+2026-01-20 19:38:58,275 - INFO - root - Start test: Complete booking
+2026-01-20 19:38:59,068 - INFO - root - Flights search submitted
+2026-01-20 19:38:59,965 - INFO - root - Flight selected
+2026-01-20 19:39:00,535 - ERROR - root - Error in test_complete_booking
+Traceback (most recent call last):
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/tests/test_blazedemo.py", line 74, in test_complete_booking
+    assert "Thank you for your purchase!" in driver.page_source
+AssertionError: assert 'Thank you for your purchase!' in '<html lang="en"><head>\n    <meta charset="utf-8">\n    <title>BlazeDemo Confirmation</title>\n    <meta name="descri...,\n      recordScrollState: true,\n    };\n    client.initAutoTracking(options);\n  });\n</script>\n\n\n</body></html>'
+ +  where '<html lang="en"><head>\n    <meta charset="utf-8">\n    <title>BlazeDemo Confirmation</title>\n    <meta name="descri...,\n      recordScrollState: true,\n    };\n    client.initAutoTracking(options);\n  });\n</script>\n\n\n</body></html>' = <selenium.webdriver.chrome.webdriver.WebDriver (session="5f3c80e15a2965e2d5a10a718675bdc9")>.page_source
+2026-01-20 19:39:00,639 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:39:00,709 - INFO - root - ===== Test finished =====
+2026-01-20 19:40:32,126 - INFO - root - ===== Test setup started =====
+2026-01-20 19:40:34,038 - INFO - root - Start test: Open homepage
+2026-01-20 19:40:35,018 - INFO - root - Homepage opened successfully
+2026-01-20 19:40:35,022 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:40:35,097 - INFO - root - ===== Test finished =====
+2026-01-20 19:40:35,098 - INFO - root - ===== Test setup started =====
+2026-01-20 19:40:36,477 - INFO - root - Start test: Search flights
+2026-01-20 19:40:37,310 - INFO - root - Flight search submitted
+2026-01-20 19:40:37,829 - INFO - root - Flights table loaded successfully
+2026-01-20 19:40:37,830 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:40:37,934 - INFO - root - ===== Test finished =====
+2026-01-20 19:40:37,935 - INFO - root - ===== Test setup started =====
+2026-01-20 19:40:40,013 - INFO - root - Start test: Complete booking
+2026-01-20 19:40:40,144 - INFO - root - Flights search submitted
+2026-01-20 19:40:41,091 - INFO - root - Flight selected
+2026-01-20 19:40:41,654 - ERROR - root - Error in test_complete_booking
+Traceback (most recent call last):
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/tests/test_blazedemo.py", line 74, in test_complete_booking
+    assert confirmation_text == "Thank you for your purchase!"
+AssertionError: assert 'Thank you fo...rchase today!' == 'Thank you for your purchase!'
+  
+  [0m[91m- Thank you for your purchase![39;49;00m[90m[39;49;00m
+  [92m+ Thank you for your purchase today![39;49;00m[90m[39;49;00m
+  ?                            ++++++[90m[39;49;00m
+2026-01-20 19:40:41,761 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:40:41,833 - INFO - root - ===== Test finished =====
+2026-01-20 19:41:05,254 - INFO - root - ===== Test setup started =====
+2026-01-20 19:41:06,888 - INFO - root - Start test: Open homepage
+2026-01-20 19:41:07,575 - INFO - root - Homepage opened successfully
+2026-01-20 19:41:07,576 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:41:07,652 - INFO - root - ===== Test finished =====
+2026-01-20 19:41:07,653 - INFO - root - ===== Test setup started =====
+2026-01-20 19:41:09,030 - INFO - root - Start test: Search flights
+2026-01-20 19:41:10,668 - INFO - root - Flight search submitted
+2026-01-20 19:41:11,080 - INFO - root - Flights table loaded successfully
+2026-01-20 19:41:11,080 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:41:11,153 - INFO - root - ===== Test finished =====
+2026-01-20 19:41:11,153 - INFO - root - ===== Test setup started =====
+2026-01-20 19:41:13,075 - INFO - root - Start test: Complete booking
+2026-01-20 19:41:14,297 - INFO - root - Flights search submitted
+2026-01-20 19:41:14,732 - INFO - root - Flight selected
+2026-01-20 19:41:15,307 - INFO - root - Booking completed successfully
+2026-01-20 19:41:15,307 - INFO - root - ===== Test teardown started =====
+2026-01-20 19:41:15,378 - INFO - root - ===== Test finished =====
+2026-01-20 20:04:42,393 - INFO - root - ===== Test setup started =====
+2026-01-20 20:04:45,615 - INFO - root - Start test: Open homepage
+2026-01-20 20:04:45,622 - INFO - root - Homepage opened successfully
+2026-01-20 20:04:45,623 - INFO - root - ===== Test teardown started =====
+2026-01-20 20:04:45,698 - INFO - root - ===== Test finished =====
+2026-01-20 20:04:45,699 - INFO - root - ===== Test setup started =====
+2026-01-20 20:04:47,175 - INFO - root - Start test: Search flights
+2026-01-20 20:04:48,017 - INFO - root - Flight search submitted
+2026-01-20 20:04:48,531 - INFO - root - Flights table loaded successfully
+2026-01-20 20:04:48,533 - INFO - root - ===== Test teardown started =====
+2026-01-20 20:04:48,607 - INFO - root - ===== Test finished =====
+2026-01-20 20:04:48,608 - INFO - root - ===== Test setup started =====
+2026-01-20 20:04:50,128 - INFO - root - Start test: Complete booking
+2026-01-20 20:04:51,075 - INFO - root - Flights search submitted
+2026-01-20 20:04:51,803 - INFO - root - Flight selected
+2026-01-20 20:04:52,432 - INFO - root - Booking completed successfully
+2026-01-20 20:04:52,433 - INFO - root - ===== Test teardown started =====
+2026-01-20 20:04:52,505 - INFO - root - ===== Test finished =====
+2026-01-20 20:07:02,582 - INFO - root - ===== Test setup started =====
+2026-01-20 20:07:05,525 - INFO - root - Start test: Open homepage
+2026-01-20 20:07:05,536 - INFO - root - Homepage opened successfully
+2026-01-20 20:07:05,540 - INFO - root - ===== Test teardown started =====
+2026-01-20 20:07:05,611 - INFO - root - ===== Test finished =====
+2026-01-20 20:07:05,612 - INFO - root - ===== Test setup started =====
+2026-01-20 20:07:08,188 - INFO - root - Start test: Search flights
+2026-01-20 20:07:09,020 - INFO - root - Flight search submitted
+2026-01-20 20:07:09,027 - INFO - root - Flights table loaded successfully
+2026-01-20 20:07:09,028 - INFO - root - ===== Test teardown started =====
+2026-01-20 20:07:09,099 - INFO - root - ===== Test finished =====
+2026-01-20 20:07:09,100 - INFO - root - ===== Test setup started =====
+2026-01-20 20:07:11,346 - INFO - root - Start test: Complete booking
+2026-01-20 20:07:11,892 - INFO - root - Flights search submitted
+2026-01-20 20:07:12,238 - INFO - root - Flight selected
+2026-01-20 20:07:12,978 - ERROR - root - Error in test_complete_booking
+Traceback (most recent call last):
+  File "/Users/nurbibirahmanberdieva/Documents/SQAT/asikk5/tests/test_blazedemo.py", line 74, in test_complete_booking
+    assert confirmation_text == "Thank you for your purchase!"
+AssertionError: assert 'Thank you fo...rchase today!' == 'Thank you for your purchase!'
+  
+  [0m[91m- Thank you for your purchase![39;49;00m[90m[39;49;00m
+  [92m+ Thank you for your purchase today![39;49;00m[90m[39;49;00m
+  ?                            ++++++[90m[39;49;00m
+2026-01-20 20:07:13,081 - ERROR - root - Test failed. Screenshot saved: screenshots/test_complete_booking_20260120_200713.png
+2026-01-20 20:07:13,081 - INFO - root - ===== Test teardown started =====
+2026-01-20 20:07:13,171 - INFO - root - ===== Test finished =====
+2026-01-20 20:12:06,812 - INFO - root - ===== Test setup started =====
+2026-01-20 20:12:10,567 - INFO - root - Start test: Open homepage
+2026-01-20 20:12:10,575 - INFO - root - Homepage opened successfully
+2026-01-20 20:12:10,578 - INFO - root - ===== Test teardown started =====
+2026-01-20 20:12:10,652 - INFO - root - ===== Test finished =====
+2026-01-20 20:12:10,653 - INFO - root - ===== Test setup started =====
+2026-01-20 20:12:12,525 - INFO - root - Start test: Search flights
+2026-01-20 20:12:13,778 - INFO - root - Flight search submitted
+2026-01-20 20:12:13,786 - INFO - root - Flights table loaded successfully
+2026-01-20 20:12:13,787 - INFO - root - ===== Test teardown started =====
+2026-01-20 20:12:13,854 - INFO - root - ===== Test finished =====
+2026-01-20 20:12:13,855 - INFO - root - ===== Test setup started =====
+2026-01-20 20:12:16,330 - INFO - root - Start test: Complete booking
+2026-01-20 20:12:16,860 - INFO - root - Flights search submitted
+2026-01-20 20:12:16,897 - INFO - root - Flight selected
+2026-01-20 20:12:17,775 - INFO - root - Booking completed successfully
+2026-01-20 20:12:17,775 - INFO - root - ===== Test teardown started =====
+2026-01-20 20:12:17,844 - INFO - root - ===== Test finished =====
