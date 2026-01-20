@@ -10,13 +10,15 @@ This project contains automated UI tests for the BlazeDemo flight booking applic
 - pytest-html
 
 ## Project Structure
+```bash
 asikk5/
 ├── tests/
 │ └── test_blazedemo.py
 ├── screenshots/
 ├── reports/
+├── logs/
+├── utils/
 ├── conftest.py
-├── requirements.txt
 └── README.md
 
 ## Prerequisites
