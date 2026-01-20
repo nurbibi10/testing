@@ -31,3 +31,23 @@ asikk5/
 1. Clone the repository:
 ```bash
 git clone https://github.com/nurbibi10/testing.git
+```
+2. Navigate to project directory:
+```bash
+cd asikk5
+```
+3. Install dependencies:
+- Selenium WebDriver
+- PyTest
+
+## Test Execution
+Run all tests and generate HTML report:
+```bash
+pytest --html=reports/report.html --self-contained-html
+```
+
+## Test Reports
+
+HTML execution report is generated in the reports folder
+Screenshots are saved in the screenshots folder on test failure
+Logs are available in the logs folder
