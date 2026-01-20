@@ -49,5 +49,7 @@ pytest --html=reports/report.html --self-contained-html
 ## Test Reports
 
 HTML execution report is generated in the reports folder
+
 Screenshots are saved in the screenshots folder on test failure
+
 Logs are available in the logs folder
