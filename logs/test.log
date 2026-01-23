@@ -264,3 +264,39 @@ AssertionError: assert 'Thank you fo...rchase today!' == 'Thank you for your pur
 2026-01-20 20:12:17,775 - INFO - root - Booking completed successfully
 2026-01-20 20:12:17,775 - INFO - root - ===== Test teardown started =====
 2026-01-20 20:12:17,844 - INFO - root - ===== Test finished =====
+2026-01-20 22:06:41,357 - INFO - root - ===== Test setup started =====
+2026-01-20 22:06:46,043 - INFO - root - Start test: Open homepage
+2026-01-20 22:06:46,060 - INFO - root - Homepage opened successfully
+2026-01-20 22:06:46,062 - INFO - root - ===== Test teardown started =====
+2026-01-20 22:06:46,135 - INFO - root - ===== Test finished =====
+2026-01-20 22:06:46,136 - INFO - root - ===== Test setup started =====
+2026-01-20 22:06:48,653 - INFO - root - Start test: Search flights
+2026-01-20 22:06:48,806 - INFO - root - Flight search submitted
+2026-01-20 22:06:49,324 - INFO - root - Flights table loaded successfully
+2026-01-20 22:06:49,325 - INFO - root - ===== Test teardown started =====
+2026-01-20 22:06:49,394 - INFO - root - ===== Test finished =====
+2026-01-20 22:06:49,395 - INFO - root - ===== Test setup started =====
+2026-01-20 22:06:51,953 - INFO - root - Start test: Complete booking
+2026-01-20 22:06:52,547 - INFO - root - Flights search submitted
+2026-01-20 22:06:52,587 - INFO - root - Flight selected
+2026-01-20 22:06:53,633 - INFO - root - Booking completed successfully
+2026-01-20 22:06:53,633 - INFO - root - ===== Test teardown started =====
+2026-01-20 22:06:53,701 - INFO - root - ===== Test finished =====
+2026-01-20 22:10:01,110 - INFO - root - ===== Test setup started =====
+2026-01-20 22:10:03,282 - INFO - root - Start test: Open homepage
+2026-01-20 22:10:04,128 - INFO - root - Homepage opened successfully
+2026-01-20 22:10:04,129 - INFO - root - ===== Test teardown started =====
+2026-01-20 22:10:04,205 - INFO - root - ===== Test finished =====
+2026-01-20 22:10:04,206 - INFO - root - ===== Test setup started =====
+2026-01-20 22:10:05,844 - INFO - root - Start test: Search flights
+2026-01-20 22:10:06,784 - INFO - root - Flight search submitted
+2026-01-20 22:10:08,238 - INFO - root - Flights table loaded successfully
+2026-01-20 22:10:08,239 - INFO - root - ===== Test teardown started =====
+2026-01-20 22:10:08,311 - INFO - root - ===== Test finished =====
+2026-01-20 22:10:08,312 - INFO - root - ===== Test setup started =====
+2026-01-20 22:10:10,951 - INFO - root - Start test: Complete booking
+2026-01-20 22:10:11,082 - INFO - root - Flights search submitted
+2026-01-20 22:10:12,146 - INFO - root - Flight selected
+2026-01-20 22:10:12,756 - INFO - root - Booking completed successfully
+2026-01-20 22:10:12,756 - INFO - root - ===== Test teardown started =====
+2026-01-20 22:10:12,828 - INFO - root - ===== Test finished =====

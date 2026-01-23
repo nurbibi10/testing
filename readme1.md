@@ -35,26 +35,21 @@ This project implements comprehensive automated testing for the BlazeDemo applic
 ```markdown
 ## 📁 Project Structure
 
-```
-├── 
-
-conftest.py
-
-                 # Pytest configuration & fixtures
+.
+├── conftest.py                  # Pytest configuration & fixtures
 ├── utils/
-│   ├── logger.py              # Logging configuration
-│   └── screenshot.py          # Screenshot utility
+│   ├── logger.py                # Logging configuration
+│   └── screenshot.py            # Screenshot utility
 ├── tests/
-│   └── test_blazedemo.py      # Test cases
+│   └── test_blazedemo.py        # Test cases
 ├── logs/
-│   └── test.log              # Test execution logs
-├── screenshots/              # Failure screenshots
+│   └── test.log                 # Test execution logs
+├── screenshots/                 # Failure screenshots
 ├── reports/
-│   └── report.html          # HTML test report
-├── requirements.txt          # Project dependencies
-└── README.md                 # This file
-```
-```
+│   └── report.html              # HTML test report
+├── requirements.txt             # Project dependencies
+└── README.md                    # Project documentation
+
 
 
 ## 🧪 Test Cases
