@@ -13,19 +13,19 @@ This project implements comprehensive automated testing for the BlazeDemo applic
 
 ## ✨ Requirements Met
 
-### 1. Test Lifecycle Management (30 pts)
+### 1. Test Lifecycle Management 
 - **Setup**: Browser initialization and navigation to application
 - **Teardown**: Browser cleanup and resource release
 - **Test Cases**: 3 test scenarios covering core functionality
 - **Framework**: pytest with fixtures
 
-### 2. Logging Framework (30 pts)
+### 2. Logging Framework
 - **Logger**: Python `logging` module
 - **Output**: File-based logging to `logs/test.log`
 - **Coverage**: Test start/end, steps, errors, and failures
 - **Format**: `%(asctime)s - %(levelname)s - %(name)s - %(message)s`
 
-### 3. Test Report & Screenshots (40 pts)
+### 3. Test Report & Screenshots
 - **Report Tool**: pytest-html
 - **Screenshots**: Automatic capture on test failure
 - **Summary**: Pass/Fail/Skip statistics
@@ -50,7 +50,7 @@ This project implements comprehensive automated testing for the BlazeDemo applic
 ├── requirements.txt             # Project dependencies
 └── README.md                    # Project documentation
 
-
+```
 
 ## 🧪 Test Cases
 
